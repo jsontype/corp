@@ -16,15 +16,3 @@
 .App-link {
   color: #61dafb;
 }
-
-$width: 70px;
-
-.LanguageBtns {
-  margin-top: 50px;
-  display: flex;
-  width: $width;
-
-  &>* {
-    flex: 1;
-  }
-}

@@ -1,10 +1,10 @@
+import { useState } from "react"
 import Home from "pages/Home"
 import "./App.css"
 import i18n from "i18next"
+import Footer from "components/Footer"
 
 export default function App({ i18nSetting }: any) {
-  console.log(i18nSetting)
-
   const onChangeToKO = () => {
     i18n.changeLanguage("ko")
   }
@@ -16,14 +16,24 @@ export default function App({ i18nSetting }: any) {
   const onChangeToJA = () => {
     i18n.changeLanguage("ja")
   }
+  const [value, setValue] = useState(0)
 
   return (
-    <>
-      <Home
-        onChangeToKO={onChangeToKO}
-        onChangeToEN={onChangeToEN}
-        onChangeToJA={onChangeToJA}
-      />
-    </>
+    <div className="App">
+      <header className="App-header">
+        <Home
+          onChangeToKO={i18nSetting && onChangeToKO}
+          onChangeToEN={i18nSetting && onChangeToEN}
+          onChangeToJA={i18nSetting && onChangeToJA}
+        />
+        <Footer
+          value={value}
+          setValue={setValue}
+          onChangeToKO={i18nSetting && onChangeToKO}
+          onChangeToEN={i18nSetting && onChangeToEN}
+          onChangeToJA={i18nSetting && onChangeToJA}
+        />
+      </header>
+    </div>
   )
 }
