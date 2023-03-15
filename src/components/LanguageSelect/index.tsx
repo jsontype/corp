@@ -5,7 +5,7 @@ import BottomNavigation from "@mui/material/BottomNavigation"
 import BottomNavigationAction from "@mui/material/BottomNavigationAction"
 import "./style.scss"
 
-export default function Footer({
+export default function LanguageSelect({
   value,
   setValue,
   onChangeToKO,
@@ -29,7 +29,12 @@ export default function Footer({
         onChangeToJA()
         break
     }
+    onClickLang()
   }, [value, onChangeToKO, onChangeToEN, onChangeToJA])
+
+  const onClickLang = () => {
+    window.location.href = "#home"
+  }
 
   return (
     <Box sx={{ width: 250 }}>
@@ -39,6 +44,14 @@ export default function Footer({
         onChange={(e, newValue) => {
           e.preventDefault()
           setValue(newValue)
+        }}
+        style={{
+          padding: "30px",
+          marginBottom: "50px",
+          alignItems: "center",
+          border: "1px solid gray",
+          borderRadius: "5px",
+          backgroundColor: "#282c34",
         }}
       >
         <BottomNavigationAction
@@ -53,7 +66,7 @@ export default function Footer({
               alt="South Korea"
             />
           }
-          className={"languageBtnGroup"}
+          style={{ color: "white" }}
         />
         <BottomNavigationAction
           label={t("home:languageEnglish")}
@@ -67,7 +80,7 @@ export default function Footer({
               alt="United States"
             />
           }
-          className={"languageBtnGroup"}
+          style={{ color: "white" }}
         />
         <BottomNavigationAction
           label={t("home:languageJapanese")}
@@ -81,7 +94,7 @@ export default function Footer({
               alt="Japan"
             />
           }
-          className={"languageBtnGroup"}
+          style={{ color: "white" }}
         />
       </BottomNavigation>
     </Box>

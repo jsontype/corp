@@ -4,22 +4,22 @@ export default function AnimatedLogin() {
   return (
     <div className="box">
       <form autoComplete="off">
-        <h3>지원하기</h3>
+        <h3>Login</h3>
         <div className="inputBox">
           <input type="text" required={true} />
-          <span>성함</span>
+          <span>ID</span>
           <i></i>
         </div>
         <div className="inputBox">
           <input type="password" required={true} />
-          <span>경력사항</span>
+          <span>Password</span>
           <i></i>
         </div>
         <div className="links">
-          <span className="textLink">소개자이신가요?</span>
-          <span className="textLink">약관</span>
+          <span className="textLink">What is this?</span>
+          <span className="textLink">Policy</span>
         </div>
-        <input type="submit" value="제출" />
+        <input type="submit" value="Submit" />
       </form>
     </div>
   )

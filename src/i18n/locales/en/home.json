@@ -1,9 +1,11 @@
 {
   "applyCancel": "Back",
-  "applySubmit": "Let me apply",
-  "brandDescription": "Guidelines on Recruitment of React Developers",
-  "brandName": "Y Systems",
+  "applySubmit": "Login",
+  "hello": "Welcome to Y-Systems",
   "languageEnglish": "EN",
   "languageJapanese": "JP",
-  "languageKorean": "KR"
+  "languageKorean": "KR",
+  "promoSupData": "Promoter",
+  "devSupData": "Supporter",
+  "devMenteeData": "Mentee"
 }

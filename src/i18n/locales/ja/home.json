@@ -1,9 +1,11 @@
 {
   "applyCancel": "戻る",
-  "applySubmit": "申し込む",
-  "brandDescription": "React開発人材募集制度についてのご案内",
-  "brandName": "Y システムズ",
+  "applySubmit": "管理者",
+  "hello": "Y-Systems 業務ポータル",
   "languageEnglish": "英",
   "languageJapanese": "日",
-  "languageKorean": "韓"
+  "languageKorean": "韓",
+  "promoSupData": "広告",
+  "devSupData": "委託勤務",
+  "devMenteeData": "開発"
 }

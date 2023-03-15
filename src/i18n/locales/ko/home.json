@@ -1,9 +1,11 @@
 {
   "applyCancel": "뒤로",
-  "applySubmit": "지원하기",
-  "brandDescription": "React 개발 인력 모집",
-  "brandName": "Y 시스템즈",
+  "applySubmit": "관리자",
+  "hello": "Y Systems 업무용 포털",
   "languageEnglish": "영",
   "languageJapanese": "일",
-  "languageKorean": "한"
+  "languageKorean": "한",
+  "promoSupData": "홍보",
+  "devSupData": "업무위탁",
+  "devMenteeData": "SI개발"
 }
